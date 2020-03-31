@@ -17,7 +17,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "swnat-mandrill": [
+        "dist/swnat-mandrill"
+      ],
+      "swnat-mandrill/*": [
+        "dist/swnat-mandrill/*"
+      ],
+      "lib/*": [
+        "dist/swnat-mandrill/lib/*",
+      ],
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

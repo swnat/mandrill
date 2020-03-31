@@ -1,0 +1,173 @@
+// @import './styles/core.scss';
+// @import 'node_modules/bulma/sass/bulma';
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+html,
+body {
+  // background: red;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cardTitle {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+.button.is-primary {
+  background-color: #008079;
+  border-color: transparent;
+  color: #fff;
+}
+
+.input {
+  outline: 3px solid transparent;
+  border-radius: 0;
+  transition: 0.1s;
+  border: 3px solid #ccc;
+  background-color: #e8eeef;
+  transition-delay: 0.1s !important;
+  transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+}
+
+.input:focus,
+.input:active {
+  outline: 3px solid #008079;
+  border-color: transparent;
+  box-shadow: none;
+}
+.is-primary.input {
+  outline: 3px solid #ccc;
+}
+
+.demo-sidebar {
+  /* background-color: #008079; */
+  //background-color: #f7f6f3;
+  padding: 2em 1em;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+}
+
+.left {
+  flex-basis: 20%;
+}
+
+.right {
+  flex-basis: 80%;
+
+  height: 100vh;
+  overflow: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-paddingless-horizontal {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+}
+
+.grid * {
+  grid-column: md;
+}
+.grid-xl {
+  grid-column: xl;
+}
+
+@media (max-width: 672px) {
+  :root {
+    font-size: 90%;
+  }
+}
+
+.card {
+  // height: 100%;
+}
+
+.is-flex {
+  display: flex;
+}
+/* 
+    header,
+    section,
+    footer {
+      padding: 10px;
+      border: 1px solid #000;
+    } */
+
+/* section {
+      height: 100%;
+    } */
+.theBackground {
+  border-radius: 12px !important;
+
+  img {
+    object-fit: cover;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    border-radius: 12px !important;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 100%);
+  }
+}
+.bottom-left {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Oswald';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: white;
+  padding: 20px;
+  p {
+    margin-top: 4px;
+    font-size: 0.85rem;
+    font-weight: lighter;
+    font-family: 'Raleway-Regular';
+  }
+}
+.cardTitle {
+  //margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-family: 'Oswald';
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.columns {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.column {
+  // border: 1px solid #444;
+  margin: 10px;
+  //padding: 1rem;
+  display: flex;
+  // box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  flex-direction: column;
+}
