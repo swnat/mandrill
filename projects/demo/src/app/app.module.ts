@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SwnatMandrillModule } from 'swnat-mandrill';
+import { SwnatMandrillModule } from '../../../swnat-mandrill/src/lib/swnat-mandrill.module';
 
 @NgModule({
   declarations: [

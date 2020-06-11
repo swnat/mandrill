@@ -1,6 +1,9 @@
 {
   "name": "swnat-mandrill",
-  "version": "0.0.1",
+  "version": "1.2.1c",
+  "description": "Set of components ready to use following Mandrill Design guidelines by Software Natura",
+  "author": "Joel Gimenez",
+  "license": "Apache-2.0",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14",
