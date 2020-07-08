@@ -7,7 +7,7 @@ import { Component, OnInit, HostBinding, Input } from '@angular/core';
 })
 export class ArticleCardComponent implements OnInit {
 
-  @HostBinding('class') classes = 'column is-one-third-desktop is-half-tablet';
+  // @HostBinding('class') classes = 'column is-one-third-desktop is-half-tablet';
 
   @Input()
   title = '';
