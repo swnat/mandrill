@@ -21,8 +21,6 @@ export class ArticleCardComponent implements OnInit {
   image = '';
   @Input()
   from = '';
-  @Input()
-  routeUrl = '';
 
   constructor() { }
 

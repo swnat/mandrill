@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArticleCardComponent } from './article-card/article-card.component';
-import { RouterModule } from '@angular/router';
+// import { RouterModule } from '@angular/router';
 
 
 
@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
   declarations: [ArticleCardComponent],
   imports: [
     CommonModule,
-    RouterModule,
+    // RouterModule,
   ],
   exports: [
     ArticleCardComponent
