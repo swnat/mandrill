@@ -6,7 +6,8 @@ describe('SwnatMandrillService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: SwnatMandrillService = TestBed.get(SwnatMandrillService);
+    // @ts-ignore
+    const service: SwnatMandrillService = TestBed.inject(SwnatMandrillService);
     expect(service).toBeTruthy();
   });
 });
